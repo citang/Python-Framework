@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <v1>
+        <add key="module" value="MyAuth"/>
+        <add key="handler" value="Auth"/>
+        <add key="method" value="tokenof"/>
+
+        <token>
+            <add key="username" value="str"/>
+        </token>
+    </v1>
+</Settings>

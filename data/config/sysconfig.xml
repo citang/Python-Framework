@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <configuration>
+        <AppSettings>
+            <add key="listen_port" value="8080"/>
+            <add key="deskey" value="CIATNG"/>
+            <add key="charset" value="utf-8"/>
+            <add key="print_error" value="true"/>
+
+            <add key="certfile" value="fullchain.pem"/>
+            <add key="privkey" value="privkey.pem"/>
+
+            <add key="web_path" value="%DATA_PATH%docs"/>
+            <add key="error_path" value="%DATA_PATH%errs"/>
+            <add key="module_path" value="%DATA_PATH%module"/>
+            <add key="api_path" value="%DATA_PATH%api"/>
+
+            <add key="open_rewrite" value="true"/>
+
+            <add key="home_file" value="index"/>
+            <add key="py_html_prefix" value="pyp"/>
+
+            <add key="cookie_expired_time" value="24"/>
+            <add key="cache_expired_time" value="24"/>
+        </AppSettings>
+        <dbSettings>
+            <add key="host" value="127.0.0.1"/>
+            <add key="uname" value="root"/>
+            <add key="passwd" value="123456"/>
+            <add key="dbname" value="test"/>
+            <add key="port" value="3306"/>
+        </dbSettings>
+    </configuration>
+</Settings>

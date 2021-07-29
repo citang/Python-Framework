@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <configuration>
+        <mySettings>
+            <add key="overtime" value="90000"/>
+            <add key="emailhost" value="https://aeth.io"/>
+            <add key="apihost" value="http://47.102.151.84:2500"/>
+        </mySettings>
+        <BhdSettings>
+            <add key="bhdaddress" value="3H18JM2nvHquaUL1GZ8VAw1MnnYeVor45q"/>
+            <add key="bhdcostfee" value="1.5"/>
+        </BhdSettings>
+    </configuration>
+</Settings>

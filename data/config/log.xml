@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <configuration>
+        <debug>
+            <add key="path" value="%LOG_PATH"/>
+            <add key="isprint" value="true"/>
+            <add key="infile" value="true"/>
+        </debug>
+
+        <error>
+            <add key="path" value="%LOG_PATH"/>
+            <add key="isprint" value="true"/>
+            <add key="infile" value="true"/>
+        </error>
+
+        <info>
+            <add key="path" value="%LOG_PATH"/>
+            <add key="isprint" value="true"/>
+            <add key="infile" value="true"/>
+        </info>
+
+        <app>
+            <add key="path" value="%LOG_PATH"/>
+            <add key="isprint" value="true"/>
+            <add key="infile" value="true"/>
+        </app>
+    </configuration>
+</Settings>

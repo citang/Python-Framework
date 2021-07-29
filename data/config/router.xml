@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <configuration>
+        <routerSettings>
+            <add module="App" handler="GetDemo" datatype="Req1" resultype="GetDemoRetData" version="v1" auth="false" description=""/>
+            <add module="App" handler="GetPageDemo" datatype="Req2" resultype="PageRetData" version="v1" auth="false" description=""/>
+        </routerSettings>
+    </configuration>
+</Settings>

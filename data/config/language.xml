@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <langs>
+        <add name="Language">
+            <parameter name="ZH" value="语言"/>
+            <parameter name="EN" value="Language"/>
+        </add>
+    </langs>
+</Settings>

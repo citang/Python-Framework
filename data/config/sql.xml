@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+    <sqls>
+        <select>
+            <add name="getDemoSql" content="select * from demo where id = &quot;%(id)%&quot;" decription="">
+                <parameter name="id" type="int" decription=""/>
+            </add>
+            <add name="GetDemoRetData" content="select * from demo where id = &quot;%(id)%&quot; limit %(pageSize)% offset %(pageIndex)%" decription="">
+                <parameter name="id" type="int" decription=""/>
+                <parameter name="pageSize" type="int" decription=""/>
+                <parameter name="pageIndex" type="int" decription=""/>
+            </add>
+        </select>
+        <insert>
+            <add name="insertCode" content="INSERT INTO code(code, over_time) VALUES (&quot;%(code)&quot;, &quot;%(over_time)%)&quot;" decription="">
+                <parameter name="MIP" type="str" decription="MIP"/>
+            </add>
+        </insert>
+        <update>
+            <add name="upAdminIp" content="UPDATE ccpool_config SET parameter=&quot;%(MIP)%&quot; WHERE id=2" decription="增加、修改登录IP">
+                <parameter name="MIP" type="str" decription="MIP"/>
+            </add>
+            <add name="managePwdById" content="UPDATE manage SET password=&quot;%(password)%&quot; WHERE id=%(id)%" decription="管理圆修改登录密码">
+                <parameter name="id" type="int" decription="id"/>
+                <parameter name="password" type="str" decription="新密码"/>
+            </add>
+
+        </update>
+
+        <delete>
+            <add name="delValCode" content="DELETE FROM valcode WHERE code=&quot;%(code)%&quot;" decription="销毁验证码">
+                <parameter name="code" type="str" decription="code"/>
+            </add>
+            <add name="delValCodeByTime" content="DELETE FROM valcode WHERE %(time)% > overtime+0" decription="销毁过期验证码">
+                <parameter name="time" type="int" decription="生命周期"/>
+            </add>
+        </delete>
+    </sqls>
+</Settings>

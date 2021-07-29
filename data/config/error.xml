@@ -1,0 +1,24 @@
+<Settings>
+    <errors>
+        <apicode>
+            <add key="1" value="验证码错误"/>
+            <add key="2" value=""/>
+            <add key="3" value=""/>
+        </apicode>
+
+        <retcode>
+            <add key="1" value="找不到接口"/>
+            <add key="2" value="接口需要加密而没有设置SECRETKEY"/>
+            <add key="3" value="接口需要验证身份而没有设置ACCESSTOKEN"/>
+            <add key="4" value="找不到接口对应的数据模型"/>
+            <add key="5" value="解析数据格式失败"/>
+            <add key="6" value="装载模块失败"/>
+            <add key="7" value="API接口处理失败"/>
+            <add key="8" value="找不到模块对应的接口"/>
+            <add key="9" value="处理返回数据失败"/>
+            <add key="10" value="身份认证失败"/>
+            <add key="11" value="身份认证处理错误"/>
+            <add key="12" value="TOKEN解析失败"/>
+        </retcode>
+    </errors>
+</Settings>
