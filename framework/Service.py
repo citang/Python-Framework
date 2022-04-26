@@ -47,9 +47,9 @@ def __handler__(ver, mod, func):
         ret_data['code'] = httpCode
         ret_data['msg'] = reason
     else:
-        ret_data['code'] = data['retCode']
-        ret_data['msg'] = data['retMsg']
-        ret_data[data] = data['data']
+        ret_data['code'] = data['retcode']
+        ret_data['msg'] = data['retmsg']
+        ret_data['data'] = data['data']
 
     return make_response(json.dumps(ret_data, ensure_ascii=False))
 
@@ -100,4 +100,4 @@ class __WebService_Flask__:
 
     def run(self, port):
         Log.app('start listen of ' + str(port))
-        self.app.run(host='127.0.0.1', port=port)
+        self.app.run(host='0.0.0.0', port=port)

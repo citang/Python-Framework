@@ -81,9 +81,9 @@ def GetLogPath():
 
 
 def ExtendPath(path):
-    ret = path.replace('%BIN_PATH', GetBinPath())
-    ret = ret.replace('%LOG_PATH', GetLogPath())
-    ret = ret.replace('%DATA_PATh', GetDataPath())
+    ret = path.replace('%BIN_PATH%', GetBinPath())
+    ret = ret.replace('%LOG_PATH%', GetLogPath())
+    ret = ret.replace('%DATA_PATH%', GetDataPath())
     return ret
 
 

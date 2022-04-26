@@ -31,7 +31,7 @@ class __ModelData__:
     def __ChechVaild(self, name, data):
 
         # 数据类型不允许为 None
-        if name is None or data is None:
+        if (name is None) or (data is None):
             raise Exception('name or data is none!')
 
         # 检查是否存在该字段
@@ -102,7 +102,7 @@ class __ModelData__:
         self.__ChechVaild(name, data)
 
         # 检查是否为列表、字典
-        if isinstance(type(data), type[1]) or isinstance(type(data), type({1: 1})):
+        if (type(data) == type([1])) or (type(data) == type({1: 1})):
             raise Exception('type not is dict or list')
 
         self.__DATA[name] = data

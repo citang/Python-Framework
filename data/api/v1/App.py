@@ -6,27 +6,32 @@
     @Date        : 2021/7/29 11:09 上午
     @Description : description the function of the file
 """
-from data.module import Common
-
 
 class GetDemo:
     """query"""
 
     def post(self, agent, data, token, seckey):
-        cur = agent.DB()
+        ret = agent.Data('GetDemoRetData')
+        ret.SetData('id', 111)
+        ret.SetData('f1', "方")
+        ret.SetData('f2', "小")
 
-        params = {'id': data.GetData('id')}
-        row = cur.select('getDemoSql', params)
+        agent.SetResult(ret)
 
-        if len(row) < 1:
-            agent.SetApiCode(1)
-        else:
-            ret = agent.Data('GetDemoRetData')
-            ret.SetData('id', row[0]['id'])
-            ret.SetData('id', row[0]['id'])
-            ret.SetData('id', row[0]['id'])
-
-            agent.SetResult(ret)
+        # cur = agent.DB()
+        #
+        # params = {'id': data.GetData('id')}
+        # row = cur.select('getDemoSql', params)
+        #
+        # if len(row) < 1:
+        #     agent.SetApiCode(1)
+        # else:
+        #     ret = agent.Data('GetDemoRetData')
+        #     ret.SetData('id', row[0]['id'])
+        #     ret.SetData('id', row[0]['id'])
+        #     ret.SetData('id', row[0]['id'])
+        #
+        #     agent.SetResult(ret)
 
 
 class GetPageDemo:

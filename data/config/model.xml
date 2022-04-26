@@ -5,7 +5,7 @@
             <parameter name="id" type="int" extype="" isempty="false" value="" description="id"/>
         </add>
         <add name="GetDemoRetData">
-            <parameter name="id" type="int" extype="str" isempty="false" value="" description=""/>
+            <parameter name="id" type="int" extype="" isempty="false" value="" description=""/>
             <parameter name="f1" type="str" extype="" isempty="false" value="" description=""/>
             <parameter name="f2" type="str" extype="" isempty="false" value="" description=""/>
         </add>

@@ -106,6 +106,9 @@ class __ParserRouter__(metaclass=Common.__Singleton__):
                 self.__CONFIG_MAP[ver] = {}
 
             if module not in self.__CONFIG_MAP[ver]:
+                self.__CONFIG_MAP[ver][module] = {}
+
+            if handler not in self.__CONFIG_MAP[ver][module]:
                 self.__CONFIG_MAP[ver][module][handler] = {}
 
             self.__CONFIG_MAP[ver][module][handler]['version'] = ver
@@ -480,7 +483,7 @@ def GetAllModule():
     return PR.GetAllModule()
 
 
-def GetModuleByName(name):
+def GetModelByName(name):
     """依据名称获取数据类型"""
     PM = __ParserModel__()
     return PM.GetModelByName(name)
